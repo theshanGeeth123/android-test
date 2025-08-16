@@ -6,8 +6,123 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity2"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/shapeone"
+        android:layout_gravity="top"
+        android:layout_marginTop="-380dp"
+        android:layout_marginLeft="-180dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/main2img2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="eCommerce Shop"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="30dp"
+
+        />
+
+    <View
+        android:layout_width="380dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:layout_gravity="center|top"
 
 
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Browse ,select and buy\neverthing you need"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="30dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/main2img3"
+        android:layout_marginTop="20dp"
+
+        android:layout_gravity="center|left"
+
+        />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purchase Online"
+        android:textColor="@color/orage_activitymain_button"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="170dp"
+
+        />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shop smarter ,Live better"
+        android:textColor="@color/orage_activitymain_button"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="220dp"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/main_button1"
+        android:paddingLeft="45dp"
+        android:paddingRight="45dp"
+        android:text="Button"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/main2img4"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp"/>
 
 
-    />
+</FrameLayout>

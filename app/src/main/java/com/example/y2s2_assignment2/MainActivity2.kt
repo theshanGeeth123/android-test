@@ -1,6 +1,11 @@
 package com.example.y2s2_assignment2
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.animation.AnimationUtils
+import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +16,35 @@ class MainActivity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main2)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val imgBg   = findViewById<ImageView>(R.id.imageView3)
+        val imgIcon = findViewById<ImageView>(R.id.imageView5)
+        val title   = findViewById<TextView>(R.id.textView3)
+
+        // 2) Load animations (same anim, staggered)
+        val anim0 = AnimationUtils.loadAnimation(this, R.anim.animemain2)          // starts now
+        val anim1 = AnimationUtils.loadAnimation(this, R.anim.animemain2).apply {  // +120ms
+            startOffset = 120
         }
+        val anim2 = AnimationUtils.loadAnimation(this, R.anim.animemain2).apply {  // +240ms
+            startOffset = 240
+        }
+
+        // 3) Start them (order bottom -> top, tweak if you like)
+        imgBg.startAnimation(anim0)
+        imgIcon.startAnimation(anim1)
+        title.startAnimation(anim2)
+
+
+        val nextBtn = findViewById<Button>(R.id.button2)
+
+        nextBtn.setOnClickListener(){
+
+            val intent = Intent(this,MainActivity3::class.java)
+            startActivity(intent)
+
+        }
+
+
     }
 }
