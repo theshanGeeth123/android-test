@@ -11,19 +11,19 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity3 : AppCompatActivity() {
+class MainActivity4 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main3)
-
+        setContentView(R.layout.activity_main4)
 
         //Start animation
 
         val imgBg   = findViewById<ImageView>(R.id.imageView1)
         val imgIcon = findViewById<ImageView>(R.id.imageView2)
         val title   = findViewById<TextView>(R.id.textView1)
-        val logo = findViewById<ImageView>(R.id.imageView3)
+        val logo = findViewById<ImageView>(R.id.imageView2)
+        val nextBtn = findViewById<Button>(R.id.button1)
 
         // 2) Load animations (same anim, staggered)
         val anim0 = AnimationUtils.loadAnimation(this, R.anim.animemain2)          // starts now
@@ -38,19 +38,22 @@ class MainActivity3 : AppCompatActivity() {
             startOffset = 270
         }
 
+        val anim4 = AnimationUtils.loadAnimation(this,R.anim.animemain2).apply {
+            startOffset = 300
+        }
+
         // 3) Start them (order bottom -> top, tweak if you like)
         imgBg.startAnimation(anim0)
         imgIcon.startAnimation(anim1)
         title.startAnimation(anim2)
         logo.startAnimation(anim3)
+        nextBtn.startAnimation(anim4)
 
         //End animation
 
-        val nextBtn = findViewById<Button>(R.id.button1);
-
         nextBtn.setOnClickListener(){
 
-            val intent = Intent(this,MainActivity4::class.java)
+            val intent = Intent(this,MainActivity5::class.java)
             startActivity(intent)
 
         }
