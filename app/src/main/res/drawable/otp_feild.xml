@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Rounded corners -->
+            <corners android:radius="10dp"/>
+
+            <!-- Border (stroke) -->
+            <stroke
+                android:width="2dp"
+                android:color="@color/input_feilds"/>  <!-- change this to your color -->
+
+            <!-- Optional background color -->
+            <solid android:color="@android:color/white"/>
+        </shape>
+    </item>
+
+</selector>

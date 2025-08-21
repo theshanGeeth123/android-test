@@ -46,8 +46,8 @@ class MainActivity4 : AppCompatActivity() {
         imgBg.startAnimation(anim0)
         imgIcon.startAnimation(anim1)
         title.startAnimation(anim2)
-        logo.startAnimation(anim3)
-        nextBtn.startAnimation(anim4)
+//        logo.startAnimation(anim3)
+//        nextBtn.startAnimation(anim4)
 
         //End animation
 
