@@ -5,4 +5,7 @@
     <color name="orage_activitymain_button">#FC7D60</color>
     <color name="gray1">#737578</color>
     <color name="input_feilds">#FEF1E4</color>
+    <color name="green_low">#6ce78b</color>
+    <color name="nav_bar_background">#B37878</color>
+    <color name="cart_el_bg">#daedf9</color>
 </resources>

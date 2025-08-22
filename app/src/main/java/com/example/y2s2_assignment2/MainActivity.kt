@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         // Example: add a click listener
         getStartedButton.setOnClickListener {
 
-            val intent = Intent(this,MainActivity2::class.java)
+            val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
 
         }

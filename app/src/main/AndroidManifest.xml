@@ -13,6 +13,18 @@
         android:theme="@style/Theme.Y2S2_assignment2"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity12"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity11"
+            android:exported="false" />
+        <activity
+            android:name=".NabBar"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity10"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity9"
             android:exported="false" />
         <activity
