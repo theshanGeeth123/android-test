@@ -8,4 +8,6 @@
     <color name="green_low">#6ce78b</color>
     <color name="nav_bar_background">#B37878</color>
     <color name="cart_el_bg">#daedf9</color>
+    <color name="input_box2">#D5EBFC</color>
+    <color name="amount_box">#FEABAB</color>
 </resources>
