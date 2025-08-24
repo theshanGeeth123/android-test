@@ -2,34 +2,38 @@ package com.example.y2s2_assignment2
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.ImageView
+import android.view.View
+import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import android.view.animation.AnimationUtils
 
+class MainActivity: AppCompatActivity() {
 
-class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main11) // make sure this matches your XML file name
 
-        val getStartedButton = findViewById<Button>(R.id.button)
+        // Map each section id to its destination Activity
+        val routes: Map<Int, Class<*>> = mapOf(
+            R.id.section1 to MainActivity9::class.java,   // Home
+            R.id.section2 to MainActivity15::class.java,  // Favourites
+            R.id.section3 to MainActivity12::class.java,  // My Cart
+            R.id.section4 to MainActivity18::class.java,  // My Profile
+            R.id.section5 to MainActivity5::class.java    // Sign Out / other screen
+        )
 
-        val logoImage = findViewById<ImageView>(R.id.imageView4)
-        val bounceAnim = AnimationUtils.loadAnimation(this, R.anim.bounce)
-        logoImage.startAnimation(bounceAnim)
-
-        // Example: add a click listener
-        getStartedButton.setOnClickListener {
-
-            val intent = Intent(this, MainActivity2::class.java)
-            startActivity(intent)
-
+        val clicker = View.OnClickListener { v ->
+            routes[v.id]?.let { target ->
+                startActivity(Intent(this, target))
+            }
         }
 
+        // Attach listeners (all are LinearLayouts in your XML)
+        findViewById<LinearLayout>(R.id.section1).setOnClickListener(clicker)
+        findViewById<LinearLayout>(R.id.section2).setOnClickListener(clicker)
+        findViewById<LinearLayout>(R.id.section3).setOnClickListener(clicker)
+        findViewById<LinearLayout>(R.id.section4).setOnClickListener(clicker)
+        findViewById<LinearLayout>(R.id.section5).setOnClickListener(clicker)
     }
 }

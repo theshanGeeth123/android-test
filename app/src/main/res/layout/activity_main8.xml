@@ -93,7 +93,7 @@
         android:background="@drawable/main_button2"
         android:paddingLeft="45dp"
         android:paddingRight="45dp"
-        android:text="Sign in"
+        android:text="Verify Now"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="22sp"
