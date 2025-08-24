@@ -51,7 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            app:srcCompat="@drawable/main10img1" />
+            app:srcCompat="@drawable/main16img2" />
 
 
         <TextView
@@ -95,20 +95,20 @@
             android:layout_marginLeft="10dp"
             android:orientation="horizontal">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity=""
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity=""
 
-            android:background="@drawable/main10btn1"
-            android:paddingLeft="25dp"
-            android:paddingRight="25dp"
-            android:text="$10.99"
+                android:background="@drawable/main16btn1"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="$10.99"
 
-            android:textSize="20sp"
-            android:textColor="@color/white"
-            android:textStyle="bold"/>
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
 
             <View
                 android:layout_width="0dp"
@@ -131,14 +131,14 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
-            app:srcCompat="@drawable/main10img2" />
+            app:srcCompat="@drawable/main16img3" />
 
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="12dp"
             android:orientation="horizontal">
 
 
@@ -200,7 +200,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity=""
 
-                android:background="@drawable/main10btn1"
+                android:background="@drawable/main16btn1"
                 android:paddingLeft="25dp"
                 android:paddingRight="25dp"
                 android:text="Buy now"
@@ -215,13 +215,13 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity=""
 
-                android:background="@drawable/main10btn2"
+                android:background="@drawable/main16btn2"
                 android:paddingLeft="25dp"
                 android:paddingRight="25dp"
                 android:text="Buy now"
                 android:layout_marginLeft="10dp"
                 android:textSize="20sp"
-                android:textColor="@color/green_low"
+                android:textColor="#8069FF"
                 android:textStyle="bold"/>
 
 

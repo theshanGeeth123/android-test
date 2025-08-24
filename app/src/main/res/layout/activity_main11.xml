@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@color/nav_bar_background"
+        android:background="#FCC197"
 
         tools:context=".MainActivity9">
 
@@ -26,13 +26,54 @@
             app:srcCompat="@drawable/main_logo"
             />
 
-        <LinearLayout
+<!--        <LinearLayout-->
 
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:background="@drawable/linear_stroke"-->
+        <!--            android:layout_marginTop="40dp"-->
+        <!--            >-->
+
+
+
+        <!--            <ImageView-->
+        <!--                android:id="@+id/imageView1"-->
+        <!--                android:layout_width="30dp"-->
+        <!--                android:layout_height="75dp"-->
+        <!--                app:srcCompat="@drawable/main11img1"-->
+        <!--                android:layout_marginRight="30dp"-->
+        <!--                android:layout_marginLeft="60dp"/>-->
+
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:text="HOME"-->
+        <!--                android:gravity="center_vertical"-->
+        <!--                android:textSize="25sp"-->
+        <!--                android:textStyle="bold"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                >-->
+        <!--            </TextView>-->
+
+        <!--            <View-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_height="0dp"-->
+        <!--                android:layout_weight="1" />-->
+
+
+
+
+
+        <!--        </LinearLayout>-->
+
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:background="@drawable/linear_stroke"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             >
 
 
@@ -48,7 +89,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="HOME"
+                android:text="Home"
                 android:gravity="center_vertical"
                 android:textSize="25sp"
                 android:textStyle="bold"
@@ -66,7 +107,6 @@
 
 
         </LinearLayout>
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -107,6 +147,7 @@
 
 
         </LinearLayout>
+
 
 
     </LinearLayout>
