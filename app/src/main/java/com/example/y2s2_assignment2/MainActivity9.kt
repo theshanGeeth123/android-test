@@ -24,5 +24,43 @@ class MainActivity9 : AppCompatActivity() {
 //        }
 
 
+        val menu = findViewById<ImageView>(R.id.imageView12)
+
+        menu.setOnClickListener(){
+
+            val intent = Intent(this,MainActivity11::class.java)
+
+            startActivity(intent)
+        }
+
+
+        val image1 = findViewById<ImageView>(R.id.imageView20)
+
+        image1.setOnClickListener(){
+
+            val intent = Intent(this, MainActivity10::class.java)
+            startActivity(intent)
+        }
+
+        val image2 = findViewById<ImageView>(R.id.imageView21)
+
+        image2.setOnClickListener(){
+
+            val intent = Intent(this, MainActivity16::class.java)
+            startActivity(intent)
+        }
+
+
+
+        val image4 = findViewById<ImageView>(R.id.imageView19)
+
+        image4.setOnClickListener(){
+
+            val intent = Intent(this, MainActivity12::class.java)
+            startActivity(intent)
+        }
+
+
+
     }
 }

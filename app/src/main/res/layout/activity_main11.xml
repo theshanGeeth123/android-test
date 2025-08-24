@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#FCC197"
+        android:background="#F4FAFE"
 
         tools:context=".MainActivity9">
 
@@ -207,6 +207,43 @@
 
                 android:layout_width="30dp"
                 android:layout_height="75dp"
+                app:srcCompat="@drawable/navbar6"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="60dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="My Orders"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"></TextView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/section6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/linear_stroke"
+
+            >
+
+
+
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="75dp"
                 app:srcCompat="@drawable/navbar4"
                 android:layout_marginRight="30dp"
                 android:layout_marginLeft="60dp"/>
@@ -214,13 +251,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="My Profile"
                 android:gravity="center_vertical"
-                android:textSize="25sp"
-                android:textStyle="bold"
+                android:text="My Profile"
                 android:textColor="@color/black"
-                >
-            </TextView>
+                android:textSize="25sp"
+                android:textStyle="bold"></TextView>
 
             <View
                 android:layout_width="0dp"
@@ -233,12 +268,18 @@
 
         </LinearLayout>
 
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
         <LinearLayout
             android:id="@+id/section5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:background="@drawable/linear_stroke"
+            android:layout_marginBottom="30dp"
 
             >
 

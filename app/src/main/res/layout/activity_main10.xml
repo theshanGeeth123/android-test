@@ -218,7 +218,7 @@
                 android:background="@drawable/main10btn2"
                 android:paddingLeft="25dp"
                 android:paddingRight="25dp"
-                android:text="Buy now"
+                android:text="Add to Cart"
                 android:layout_marginLeft="10dp"
                 android:textSize="20sp"
                 android:textColor="@color/green_low"
