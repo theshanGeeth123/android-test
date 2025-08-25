@@ -33,5 +33,14 @@ class MainActivity6 : AppCompatActivity() {
 
         }
 
+        val forgetPass = findViewById<TextView>(R.id.textView3)
+
+        forgetPass.setOnClickListener(){
+
+            val intent = Intent(this,MainActivity19::class.java)
+            startActivity(intent)
+
+        }
+
     }
 }
