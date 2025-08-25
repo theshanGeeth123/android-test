@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
@@ -17,15 +18,7 @@
         android:padding="16dp"
         tools:context=".MainActivity9">
 
-
-<!--        <ImageView-->
-<!--            android:id="@+id/imageView11"-->
-<!--            android:layout_width="89dp"-->
-<!--            android:layout_height="75dp"-->
-<!--            app:srcCompat="@drawable/main_logo"-->
-<!--            android:layout_gravity="right"-->
-<!--            />-->
-
+        <!-- Top bar (no animation) -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,18 +40,16 @@
                 android:layout_width="89dp"
                 android:layout_height="75dp"
                 app:srcCompat="@drawable/main_logo" />
-
-
-
         </LinearLayout>
 
+        <!-- Content below: add tag="reveal" to animate on first appearance -->
         <ImageView
             android:id="@+id/imageView18"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:tag="reveal"
             app:srcCompat="@drawable/main9img2" />
-
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -70,29 +61,23 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="10dp"
-                app:srcCompat="@drawable/main9img3"
-                />
-
+                android:tag="reveal"
+                app:srcCompat="@drawable/main9img3" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="20dp"
-            >
-
-
+            android:layout_marginTop="20dp">
 
             <ImageView
                 android:id="@+id/imageView20"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                app:srcCompat="@drawable/main9img4"
-                />
-
-
+                android:tag="reveal"
+                app:srcCompat="@drawable/main9img4" />
 
             <View
                 android:layout_width="0dp"
@@ -104,31 +89,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="0dp"
-                app:srcCompat="@drawable/main9img5"
-                />
-
-
+                android:tag="reveal"
+                app:srcCompat="@drawable/main9img5" />
         </LinearLayout>
-
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="20dp"
-            >
-
-
+            android:layout_marginTop="20dp">
 
             <ImageView
                 android:id="@+id/imageView22"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                app:srcCompat="@drawable/main9img6"
-                />
-
-
+                android:tag="reveal"
+                app:srcCompat="@drawable/main9img6" />
 
             <View
                 android:layout_width="0dp"
@@ -140,10 +117,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="0dp"
-                app:srcCompat="@drawable/main9img7"
-                />
-
-
+                android:tag="reveal"
+                app:srcCompat="@drawable/main9img7" />
         </LinearLayout>
 
         <ImageView
@@ -151,28 +126,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            app:srcCompat="@drawable/main9img8"
             android:layout_marginTop="20dp"
-            />
+            android:tag="reveal"
+            app:srcCompat="@drawable/main9img8" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="20dp"
-            >
-
-
+            android:layout_marginTop="20dp">
 
             <ImageView
                 android:id="@+id/imageView27"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                app:srcCompat="@drawable/main9img9"
-                />
-
-
+                android:tag="reveal"
+                app:srcCompat="@drawable/main9img9" />
 
             <View
                 android:layout_width="0dp"
@@ -184,30 +154,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="0dp"
-                app:srcCompat="@drawable/main9img10"
-                />
-
-
+                android:tag="reveal"
+                app:srcCompat="@drawable/main9img10" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginTop="20dp"
-            >
-
-
+            android:layout_marginTop="20dp">
 
             <ImageView
                 android:id="@+id/imageView29"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                app:srcCompat="@drawable/main9img11"
-                />
-
-
+                android:tag="reveal"
+                app:srcCompat="@drawable/main9img11" />
 
             <View
                 android:layout_width="0dp"
@@ -219,15 +182,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="0dp"
-                app:srcCompat="@drawable/main9img12"
-                />
-
-
+                android:tag="reveal"
+                app:srcCompat="@drawable/main9img12" />
         </LinearLayout>
-
-
-
-
 
     </LinearLayout>
 </ScrollView>
